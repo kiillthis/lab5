@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/Documents/spring/pet-clinic/pet-clinic.iml" filepath="$USER_HOME$/Documents/spring/pet-clinic/pet-clinic.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/spring/pet-clinic/pet-clinic-data/pet-clinic-data.iml" filepath="$USER_HOME$/Documents/spring/pet-clinic/pet-clinic-data/pet-clinic-data.iml" />
+      <module fileurl="file://$USER_HOME$/Documents/spring/pet-clinic/pet-clinic-web/pet-clinic-web.iml" filepath="$USER_HOME$/Documents/spring/pet-clinic/pet-clinic-web/pet-clinic-web.iml" />
+    </modules>
+  </component>
+</project>
