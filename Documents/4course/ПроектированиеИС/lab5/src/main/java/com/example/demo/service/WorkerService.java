@@ -7,9 +7,9 @@ import java.util.List;
 
 public interface WorkerService {
 
-    void makeSoftRemovingAWorker(ArrayList<Integer> id);
+    List<Worker> makeSoftRemovingAWorker(ArrayList<Integer> id);
 
-    void removeStartingWith(String s);
+    List<Worker> removeStartingWith(String s);
 
     List<Worker> getAllWorker();
 }

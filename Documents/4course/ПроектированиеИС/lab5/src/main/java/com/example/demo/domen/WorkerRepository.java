@@ -17,11 +17,11 @@ public interface WorkerRepository extends CrudRepository<Worker, Integer> {
 
     @Modifying
     @Query("update worker set is_active = false where id in (:id)")
-    void makeSoftRemoving(@Param("id") ArrayList<Integer> id);
+    List<Worker> makeSoftRemoving(@Param("id") ArrayList<Integer> id);
 
     @Modifying
     @Query("delete from worker where name like concat(:s, '%') ")
-    void deleteAllByName(@Param("s") String s);
+    List<Worker> deleteAllByName(@Param("s") String s);
 
     List<Worker> findAll();
 

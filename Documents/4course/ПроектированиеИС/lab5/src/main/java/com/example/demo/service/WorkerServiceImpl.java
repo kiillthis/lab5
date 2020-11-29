@@ -23,14 +23,14 @@ public class WorkerServiceImpl implements  WorkerService {
 
     @Transactional
     @Override
-    public void makeSoftRemovingAWorker(ArrayList<Integer> id) {
-        workerRepository.makeSoftRemoving(id);
+    public List<Worker> makeSoftRemovingAWorker(ArrayList<Integer> id) {
+        return workerRepository.makeSoftRemoving(id);
     }
 
     @Transactional
     @Override
-    public void removeStartingWith(String s) {
-        workerRepository.deleteAllByName(s);
+    public List<Worker> removeStartingWith(String s) {
+        return workerRepository.deleteAllByName(s);
     }
 
     @Transactional
